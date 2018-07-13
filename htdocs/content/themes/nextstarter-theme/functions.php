@@ -2,8 +2,8 @@
 /*
  * Themosis Theme.
  *
- * @author  Julien Lambé <julien@themosis.com>
- * @link 	http://www.themosis.com/
+ * @author  Nextmedia <contact@nextmedia.ma>
+ * @link 	https://www.nextmedia.ma/
  */
 
 /*----------------------------------------------------*/
