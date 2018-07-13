@@ -24,10 +24,10 @@ if (!function_exists('themosis_theme_assets')) {
             $segments = explode('themes', get_template_directory_uri());
             $theme = (strpos($segments[1], DS) !== false) ? substr($segments[1], 1) : $segments[1];
 
-            return get_home_url().'/'.CONTENT_DIR.'/themes/'.$theme.'/dist';
+            return get_home_url().DS.CONTENT_DIR.DS.'themes'.DS.$theme.DS.'dist';
         }
 
-        return get_template_directory_uri().'/dist';
+        return get_template_directory_uri().DS.'dist';
     }
 }
 
@@ -121,7 +121,7 @@ $constants->make();
 defined('THEME_TEXTDOMAIN') ? THEME_TEXTDOMAIN : define('THEME_TEXTDOMAIN', $theme['config.factory']->get('theme.textdomain'));
 
 $theme['action']->add('after_setup_theme', function () {
-    load_theme_textdomain(THEME_TEXTDOMAIN, get_template_directory().'/languages');
+    load_theme_textdomain(THEME_TEXTDOMAIN, get_template_directory().DS.'languages');
 });
 
 /*
